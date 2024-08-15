@@ -10,8 +10,8 @@ import json
 import os
 
 
-searcher = BraveSearch.from_api_key(search_kwargs={"count": 10}, api_key='BSAFTC_v4RCsW2pdXa1ji0gac18SNmp')
-model = ChatGroq(model_name='llama-3.1-70b-versatile', api_key='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')
+searcher = BraveSearch.from_api_key(search_kwargs={"count": 10})
+model = ChatGroq(model_name='llama-3.1-70b-versatile')
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", "You are a helpful AI assistant!"),
